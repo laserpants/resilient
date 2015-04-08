@@ -77,7 +77,7 @@ Insert a tree into the list of trees (heap), maintaining the invariant that the 
 
 > insertNode :: Ord a => a -> [BinomTree a] -> [BinomTree a]
 
-Insert a single node into the list of trees.
+Insert a single node into the list of trees. The same guarantees as for insertTree apply.
 
 ---
 

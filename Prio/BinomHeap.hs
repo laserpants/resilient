@@ -80,7 +80,8 @@ insertTree s tree@(t:ts)
   where
     t' = mergeTrees s t
 
--- | Insert a single node into the list of trees.
+-- | Insert a single node into the list of trees. The same guarantees as for
+--   insertTree apply.
 insertNode :: Ord a => a -> [BinomTree a] -> [BinomTree a]
 {-# LANGUAGE INLINE insertNode #-}
 insertNode n = insertTree (node n)
