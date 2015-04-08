@@ -4,6 +4,29 @@ Persistent data structures
 
 ## Binomial Heap
 
+```
+module Prio.BinomHeap
+  ( BinomTree
+  , order
+  , nodeCount
+  , node
+  , tree
+  , tree1
+  , root
+  , mergeTrees
+  , insertTree
+  , insertNode
+  , fromList
+  , findMinimum
+  , takeMinimum
+  ) where
+```
+
+```
+data BinomTree a = BNode a | BTree Int a [BinomTree a]
+  deriving (Show, Eq)
+```
+
 > order :: BinomTree a -> Int
 
 Return the order of a tree.
