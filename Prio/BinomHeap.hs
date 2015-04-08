@@ -91,7 +91,7 @@ fromList :: Ord a => [a] -> [BinomTree a]
 {-# LANGUAGE INLINE fromList #-}
 fromList = foldr insertNode []
 
--- | Find the minimum element in the heap.
+-- | Return the minimum element in the heap.
 findMinimum :: Ord a => [BinomTree a] -> a
 {-# LANGUAGE INLINE findMinimum #-}
 findMinimum = root . minimum

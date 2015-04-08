@@ -89,7 +89,7 @@ Construct a heap from a list of node elements.
 
 > findMinimum :: Ord a => [BinomTree a] -> a
 
-Find the minimum element in the heap.
+Return the minimum element in the heap.
 
 ---
 
