@@ -1,5 +1,6 @@
 module Prio.BinomHeap
   ( BinomTree
+  , BinomHeap
   , order
   , nodeCount
   , node
@@ -22,6 +23,8 @@ instance Ord a => Ord (BinomTree a) where
     compare (BNode   a  ) (BTree _ b _) = compare a b
     compare (BTree _ a _) (BNode   b  ) = compare a b
     compare (BTree _ a _) (BTree _ b _) = compare a b
+
+type BinomHeap a = [BinomTree a]
 
 -- | Return the order of a tree.
 order :: BinomTree a -> Int
