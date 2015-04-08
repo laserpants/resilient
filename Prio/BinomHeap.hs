@@ -109,7 +109,7 @@ minimumIndex (x:xs) =
            else (m, j, succ i)
 
 -- | Remove and return the minimum element of the heap together with a new
---   version of the heap, without the removed node.
+--   version, without the removed node.
 takeMinimum :: Ord a => [BinomTree a] -> (a, [BinomTree a])
 takeMinimum [] = error "Attempt to take minimum from empty heap."
 takeMinimum xs =

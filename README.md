@@ -99,4 +99,4 @@ Return the minimum element in the heap.
 
 > takeMinimum :: Ord a => [BinomTree a] -> (a, [BinomTree a])
 
-Remove and return the minimum element of the heap together with a new version of the heap, without the removed node.
+Remove and return the minimum element of the heap together with a new version, without the removed node.
