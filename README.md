@@ -27,6 +27,10 @@ data BinomTree a = BNode a | BTree Int a [BinomTree a]
   deriving (Show, Eq)
 ```
 
+```
+type BinomHeap a = [BinomTree a]
+```
+
 > order :: BinomTree a -> Int
 
 Return the order of a tree.
