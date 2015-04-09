@@ -1,6 +1,6 @@
 module Main where
 
-import Prio.BinomHeap
+import Queue.BinomHeap
 
 someData :: BinomHeap Int
 someData = fromList [5,12,7,8,11,6,2,3,9]

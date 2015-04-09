@@ -1,4 +1,4 @@
-module Prio.BinomHeap
+module Queue.BinomHeap
   ( BinomTree
   , BinomHeap
   , order
