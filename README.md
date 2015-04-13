@@ -105,4 +105,29 @@ Remove and return the minimum element of the heap together with a new version, w
 
 ## Union-Find
 
-...
+```
+module Set.UnionFind
+( Set(..)
+, union
+, find
+, disjoint
+) where
+```
+
+```
+data Set = Set
+    { count :: Int
+    , ids :: Seq Int
+    , sizes :: Seq Int
+} 
+```
+
+> disjoint :: [Int] -> Set
+
+---
+
+> find :: Set -> Int -> Int
+
+---
+
+> union :: Set -> Int -> Int -> Set
