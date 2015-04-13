@@ -5,7 +5,7 @@ Persistent data structures
 ## Binomial Heap
 
 ```
-module Prio.BinomHeap
+module Queue.BinomHeap
   ( BinomTree
   , order
   , nodeCount

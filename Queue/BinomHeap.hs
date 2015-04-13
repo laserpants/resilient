@@ -97,7 +97,7 @@ findMinimum :: Ord a => [BinomTree a] -> a
 findMinimum = root . minimum
 
 minimumIndex :: Ord a => [a] -> Int
-minimumIndex [] = error "Cannot find minimum element of empty list."
+minimumIndex [] = error "Cannot find minimum element of an empty list."
 minimumIndex (x:xs) =
     case foldr f (x, -1, 0) xs of
       (_, -1, _) -> 0
