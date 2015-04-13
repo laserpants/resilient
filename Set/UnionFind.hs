@@ -22,7 +22,7 @@ disjoint xs = Set len (Data.Sequence.fromList xs)
 
 find :: Set -> Int -> Int
 find set@Set{..} p | p == parent = p
-                  | otherwise  = find set parent
+                   | otherwise  = find set parent
   where
     parent = index ids (pred p)
 
