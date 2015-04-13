@@ -119,7 +119,7 @@ data Set = Set
     { count :: Int
     , ids   :: Seq Int
     , sizes :: Seq Int
-} 
+    } 
 ```
 
 > disjoint :: [Int] -> Set
