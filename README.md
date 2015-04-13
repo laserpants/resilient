@@ -107,17 +107,17 @@ Remove and return the minimum element of the heap together with a new version, w
 
 ```
 module Set.UnionFind
-( Set(..)
-, union
-, find
-, disjoint
-) where
+  ( Set(..)
+  , union
+  , find
+  , disjoint
+  ) where
 ```
 
 ```
 data Set = Set
     { count :: Int
-    , ids :: Seq Int
+    , ids   :: Seq Int
     , sizes :: Seq Int
 } 
 ```
